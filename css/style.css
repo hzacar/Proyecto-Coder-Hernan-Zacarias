@@ -44,7 +44,36 @@ html{
 	.section__fig--div{
 	display: flex;
 	}
+	.animacion_figure:hover{
+		transform: scale(1.2);
+		cursor: pointer;
+	} 
+
+	.animacion_tit{
+	position:relative;
+  	animation-name: titulo;
+  	animation-duration: 4s;
+  	animation-iteration-count: 3;
+  	animation-timing-function: ease;
+	}
+
+	@keyframes titulo {
+	  0%   {color:rgba(0, 29, 110, 1.0); left:-200px;}
+	  25%  {color:rgba(100, 100, 215, 1.0); left:0px;}
+	  50%  {color:rgba(127, 181, 255, 1.0); left:200px;}
+	  75%  {color:rgba(127, 240, 255, 1.0); left:0px;}
+	  100% {color:rgba(0, 29, 110, 1.0); left:-200px;}
+		}
 }
+	.animacion_logo{
+  	transition: width 2s, height 2s, transform 2s;
+	}
+
+	.animacion_logo:hover {
+  	width: 150px;
+  	height: 150px;
+  	transform: rotate(360deg);
+	}
 
 
 #header{
@@ -149,11 +178,11 @@ aside{
 	color: rgba(0, 29, 110, 1.0);
 	font-size: 4rem;
 	font-weight: 700;
-	padding: 10px auto;
-	margin: 50px auto;
 	text-align: center;
-
+	padding: 10px;
+	margin: 20px;
 }
+
 
 .header__img--md{
 	width: 90px;
