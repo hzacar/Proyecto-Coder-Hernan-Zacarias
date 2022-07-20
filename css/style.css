@@ -2,22 +2,53 @@
 
 *{
 	font-family: 'Ubuntu', sans-serif;
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
 }
 html{
 	font-size: 62.5%;
+
 }
 
-.grid{
-	width: 99%;
-	display: grid;
+.bg-celeste{
+	background-color: rgba(196, 221, 255, 0.8);
+}	
+
+header{
+	background-color: rgba(254, 226, 197, 0.8);
 }
+
+.nav--texto{
+	color:  rgba(0, 29, 110, 1.0);
+	text-decoration: none;
+	font-size: 1.9rem;
+	font-weight: 400;
+	padding-left: 38px;
+
+}
+.nav--texto:hover{
+	color: rgba(127, 181, 255, 1);
+	font-weight: 700;
+}
+
+.animacion_logo{
+  	transition: width 2s, height 2s, transform 2s;
+	}
+
+	.animacion_logo:hover {
+  	width: 150px;
+  	height: 150px;
+  	transform: rotate(360deg);
+	}
+	/* formato h1	
+	*/
+.grid{
+	display: grid;
+	width: 100%;
+}
+	
 .template-areas{
 	grid-template-columns: repeat 1fr;
 	grid-template-rows: auto;
-	gap:  10px;
+	gap: 10px 0px;
 	grid-template-areas: 
 	"header"
 	"main"
@@ -25,24 +56,46 @@ html{
 	"footer";
 }
 
+#header{
+	grid-area: header;
+}
+
+#main{
+	grid-area: main;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+
+	grid-area: footer;
+}
+
 @media only screen and (min-width: 1200px){
 	.template-areas{
-		grid-template-columns: 40vw 40vw 20vw;
+		grid-template-columns: 40% 40% 20%;
 		grid-template-rows: auto;
 		grid-template-areas: 
+	
 	"header header header"
 	"main main aside"
 	"main main aside"
 	"footer footer footer";
+
 	}
 
 	aside{
+	margin: 20px 0px;
 	justify-content: center;
 	flex-direction: column;
 	align-content: space-between;
 	}
+	
 	.section__fig--div{
 	display: flex;
+	justify-content: space-evenly;
 	}
 	.animacion_figure:hover{
 		transform: scale(1.2);
@@ -64,7 +117,7 @@ html{
 	  75%  {color:rgba(127, 240, 255, 1.0); left:0px;}
 	  100% {color:rgba(0, 29, 110, 1.0); left:-200px;}
 		}
-}
+
 	.animacion_logo{
   	transition: width 2s, height 2s, transform 2s;
 	}
@@ -74,59 +127,13 @@ html{
   	height: 150px;
   	transform: rotate(360deg);
 	}
-
-
-#header{
-	grid-area: header;
-}
-
-#main{
-	grid-area: main;
-}
-
-#aside{
-	grid-area: aside;
-}
-
-#footer{
-
-	grid-area: footer;
-}
-
-.encabezado{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	
 }
 
 body{
 	background-color: rgba(254, 226, 197, 0.2);
 	background-attachment: fixed;
 
-}
-header{
-	background-color: rgba(196, 221, 255, 0.8);
-}
-
-	nav ul{
-		list-style: none;
-		display: flex;
-	}
-nav ul li{
-	margin-right: 50px;
-}	
-
-
-nav ul li a{
-	color:  rgba(0, 29, 110, 1.0);
-	text-decoration: none;
-	font-size: 1.9rem;
-	font-weight: 400;
-
-}
-nav ul li a:hover{
-	color: rgba(127, 181, 255, 1);
-	font-weight: 700;
 }
 
 footer{
@@ -136,6 +143,7 @@ footer{
 	height: auto;
 	max-width: 100%;
 	text-align: center;
+	padding: 25px 0px;
 
 }
 footer p{
@@ -146,9 +154,7 @@ footer p{
 }
 
 main{
-	width: 80%;
-	display: flex;
-	justify-content: center;
+	width: 100%;
 }
 
 figure{
@@ -156,7 +162,7 @@ figure{
 }
 
 aside{
-	width: 80%;
+	width: 100%;
 	max-height: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -166,12 +172,13 @@ aside{
 	height: 70%;
 }
 
+
 .h1__p--perfiles{
 	color: rgba(0, 29, 110, 1.0);
 	font-size: 3rem;
 	font-weight: 400;
 	padding: 10px;
-	margin: 50px;
+	margin: 50px 0px;
 }
 
 .h__titulo--principal{
@@ -182,7 +189,6 @@ aside{
 	padding: 10px;
 	margin: 20px;
 }
-
 
 .header__img--md{
 	width: 90px;
@@ -203,11 +209,11 @@ aside{
 	margin: 50px auto;
 	text-align: center;
 }
-
-.galeria{
-	display: flex;
-	justify-content: center;
+.formulario{
+	margin-top: 10px;
+	box-sizing: border-box;
 }
+
 
 main ul{
 	list-style: none inside url(pelota.png);
@@ -241,14 +247,19 @@ table,th,tr,td{
 	margin: 10px auto;
 }
 .iframe__mapa{
-	max-width: 100%;
+	width: 99%;
 	height: 300px;
-	margin: 50px auto;
+}
+.flex--galeria{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
 }
 
 .galeria__img--md{
-	width: 30%;
-	height: 200px;
+	width: 50%;
+	height: auto;
 	padding: 20px;
 	margin-bottom:30px;
 }
@@ -262,4 +273,6 @@ table,th,tr,td{
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-}	
+}
+/* formato h1	
+*/

@@ -1,99 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academia de Futsal - Entrenamiento para jovenes y adolescentes </title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-	<title>Academia de Futsal - Entrenamiento para jovenes y adolescentes </title>
-	<link rel="shortcut icon" href="favicon.png">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="">
-</head>
-<div class="grid template-areas">
-<body>
-	
-	<div id="header">
-	<header>
-		<div class="encabezado">
-		<a href="index.html">
-			<img src="logo.png" class="header__img--md animacion_logo" alt="Academia de Futsal - Entrenamiento para jovenes y adolescentes">
-		</a>
-		
-		<nav>
-		  <ul>
-			<li>
-				<a href="nosotros.html">Nosotros</a>
-			</li>
-			<li>
-				<a href="clases.html">Clases y Horarios</a>
-			</li>
-			<li>
-				<a href="inscripcion.html">Inscripción</a>
-			</li>
-			<li>
-				<a href="academia.html	">La Academia</a>
-			</li>
-		</ul>
-	</nav></div>
-		<div>
-		<img class="header__img--fluido" src="header.jpeg" alt="sumate a nuestros entrenamientos"></div>
-	</header></div>
+   <body class="grid template-areas">
+    <header id="header">
+    <!-- inicio nav -->
 
-	<div id="main">
-	<main>
-		<section>
-		<h1 class="h__titulo--principal animacion_tit" >Nuestro Equipo</h1>
- 				<div>
-				<figure class="h1__p--perfiles animacion_figure"><p>Director</p>
-				<img src="perfil3.png" alt="Director Academia de Futsal">
-				<p>Nombre y apellido</p>
-				</figure></div>
-				<div class="section__fig--div">
-				<figure class="h1__p--perfiles">
-				<p>Entrenador</p>
-				<img src="perfil2.png" alt="Entrenador Academia de Futsal">
-				<p>Nombre y apellido</p>
-				</figure>
-	  			
-				<figure class="h1__p--perfiles">
-				<p>Entrenador</p>
-				<img src="perfil1.png" alt="Entrenador Academia de Futsal">
-				<p>Nombre y apellido</p>
-	    		</figure></div>
-		</section>
-	</main></div>
+    <nav class="navbar navbar-expand-md bg-celeste">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" class="header__img--md animacion_logo" alt="Academia de Futsal - Entrenamiento para jovenes y adolescentes">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item nav--texto">
+              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="clases.html">Clases y Horarios</a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="inscripcion.html">
+                Inscripción
+              </a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="academia.html">La Academia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<div id="aside">
-	<aside>
-		<div>
-		<img class="aside__img--md" src="icon1.png" alt=""></div>
-		<div>
-		<img class="aside__img--md" src="icon2.png" alt=""></div>
-		<div>
-		<img class="aside__img--md" src="icon3.png" alt=""></div>
-		<div>
-		<img class="aside__img--md" src="icon4.png" alt=""></div>
-		<div>
-		<img class="aside__img--md" src="icon5.png" alt=""></div>
-	</aside></div>
+    <!-- fin nav -->
 
+    <!-- inicio carousel -->
 
-	<div id="footer">
-	<footer>
-		<p class="display--inli">Seguinos en nuestras redes</p>
-		<div class="pie__img--flex">
-		<a href="https://www.instagram.com/" target="_blank">
-			<img class="pie__img--sm" src="instagram.png" alt="Ingresa a nuestro instagram">
-		</a>
-		<a href="https://www.youtube.com/" target="_blank">
-			<img class="pie__img--sm" src="youtube.png" alt="Ingresa a nuestro youtube">
-		</a>
-		<a href="https://twitter.com/?lang=es" target="_blank">
-			<img class="pie__img--sm" src="twitter.png" alt="Ingresa a nuestro twitter">
-		</a>
-		<a href="https://wa.me/" target="_blank">
-			<img class="pie__img--sm" src="whatsapp.png" alt="Envianos un Whatsapp">
-		</a></div>
-	</footer></div>
-</body ></div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+        <img src="header.jpeg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+        <img src="galeria.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+        <img src="galeria2.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+         <img src="galeria3.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="  #carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+     </header>
+    <!-- fin carousel -->
+
+    <!-- inicio main -->
+    <div id="main">
+    <main class="col-sm-12">
+      <section>
+        <h1 class="h__titulo--principal" >Nuestro Equipo</h1>
+        <div>
+        <figure class="h1__p--perfiles animacion_figure"><p>Director</p>
+        <img src="perfil3.png" alt="Director Academia de Futsal">
+        <p>Nombre y apellido</p>
+        </figure></div>
+        <div class="section__fig--div">
+        <figure class="h1__p--perfiles animacion_figure">
+        <p>Entrenador</p>
+        <img src="perfil2.png" alt="Entrenador Academia de Futsal">
+        <p>Nombre y apellido</p>
+        </figure>
+          
+        <figure class="h1__p--perfiles animacion_figure">
+        <p>Entrenador</p>
+        <img src="perfil1.png" alt="Entrenador Academia de Futsal">
+        <p>Nombre y apellido</p>
+        </figure></div>
+      </section>
+    </main></div>
+
+    <!-- fin main -->
+
+    <!-- inicio aside -->
+    <div id="aside" class="col-sm-12">
+    <aside>
+    <div>
+      <img class="aside__img--md" src="icon1.png" alt=""></div>
+      <div>
+      <img class="aside__img--md" src="icon2.png" alt=""></div>
+      <div>
+      <img class="aside__img--md" src="icon3.png" alt=""></div>
+      <div>
+      <img class="aside__img--md" src="icon4.png" alt=""></div>
+      <div>
+      <img class="aside__img--md" src="icon5.png" alt=""></div>
+    </aside></div>
+    </div>
+  </div>
+    <!-- fin aside -->
+
+    <!-- inicio footer -->
+    <div id="footer">
+    <footer>
+      <p class="display--inli">Seguinos en nuestras redes</p>
+      <div class="pie__img--flex">
+      <a href="https://www.instagram.com/" target="_blank">
+      <img class="pie__img--sm" src="instagram.png" alt="Ingresa a nuestro instagram">
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+      <img class="pie__img--sm" src="youtube.png" alt="Ingresa a nuestro youtube">
+      </a>
+      <a href="https://twitter.com/?lang=es" target="_blank">
+      <img class="pie__img--sm" src="twitter.png" alt="Ingresa a nuestro twitter">
+      </a>
+      <a href="https://wa.me/" target="_blank">
+      <img class="pie__img--sm" src="whatsapp.png" alt="Envianos un Whatsapp">
+      </a></div>
+    </footer></div>
+
+    <!-- fin footer -->
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+  </body>
+
 </html>

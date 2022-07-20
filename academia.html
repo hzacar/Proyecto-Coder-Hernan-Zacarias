@@ -1,55 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Academia de Futsal - Entrenamiento para jovenes y adolescentes </title>
-	<link rel="shortcut icon" href="favicon.png">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<div class="grid template-areas">
-<body>
-	
-	<div id="header" class="">
-	<header>
-		<div class="encabezado">
-		<a href="index.html">
-			<img src="logo.png" class="header__img--md" alt="Academia de Futsal - Entrenamiento para jovenes y adolescentes">
-		</a>
-		
-		<nav class="">
-		  <ul>
-			<li>
-				<a href="nosotros.html">Nosotros</a>
-			</li>
-			<li>
-				<a href="clases.html">Clases y Horarios</a>
-			</li>
-			<li>
-				<a href="inscripcion.html">Inscripción</a>
-			</li>
-			<li>
-				<a href="academia.html	">La Academia</a>
-			</li>
-		</ul>
-	</nav></div>
-		<div>
-		<img class="header__img--fluido" src="header.jpeg" alt="sumate a nuestros entrenamientos"></div>
-	</header></div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academia de Futsal - Entrenamiento para jovenes y adolescentes </title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-	<div id="main" class="galeria">
+   <body class="grid template-areas">
+    <header id="header">
+    <!-- inicio nav -->
+
+    <nav class="navbar navbar-expand-md bg-celeste">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" class="header__img--md animacion_logo" alt="Academia de Futsal - Entrenamiento para jovenes y adolescentes">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item nav--texto">
+              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="clases.html">Clases y Horarios</a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="inscripcion.html">
+                Inscripción
+              </a>
+            </li>
+            <li class="nav-item nav--texto">
+              <a class="nav-link" href="academia.html">La Academia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fin nav -->
+
+    <!-- inicio carousel -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+        <img src="header.jpeg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+        <img src="galeria.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+        <img src="galeria2.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+         <img src="galeria3.jpg" class="d-block w-100" alt="sumate a nuestros entrenamientos">
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="  #carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+     </header>
+    <!-- fin carousel -->
+
+	<div id="main">
 	<main>
 		<div>
 		<h1 class="h__titulo--principal">¿Dónde estamos?</h1>
 			<iframe class="iframe__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.984800747892!2d-58.5516849!3d-34.5789627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98b485f3ca28f544!2sGB%20Sports!5e0!3m2!1ses-419!2sar!4v1655605908358!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>	
-		<div>
+		</div>
+
 		<h2 class="h__titulo--principal">Galeria</h2>
+		<div class="flex--galeria">
 		<img class="galeria__img--md" src="galeria.jpg" alt="sumate a los grupos de entrenamientos">
 
 		<img class="galeria__img--md" src="galeria2.jpg" alt="sumate a los grupos de entrenamientos">
 		<img class="galeria__img--md" src="galeria3.jpg" alt="sumate a los grupos de entrenamientos">
 		</div>
+		
 	</main></div>
 
  <div id="aside">
@@ -84,5 +122,8 @@
 			.png" alt="Envianos un Whatsapp">
 		</a></div>
 	</footer></div>
-</body ></div>
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body >
 </html>
