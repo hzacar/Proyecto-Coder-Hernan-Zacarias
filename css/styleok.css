@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bg-celeste {
+  background-color: rgba(196, 221, 255, 0.8);
+}
+
+header {
+  background-color: rgba(254, 226, 197, 0.8);
+}
+
+.nav--texto {
+  color: rgb(0, 29, 110);
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: 400;
+  padding-left: 38px;
+}
+.nav--texto :hover {
+  color: rgb(127, 181, 255);
+  font-weight: 700;
+}
+
+.animacion_logo {
+  transition: width 2s, height 2s, transform 2s;
+}
+.animacion_logo :hover {
+  width: 150px;
+  height: 150px;
+  transform: rotate(360deg);
+}
+
+footer {
+  font-size: 1.9rem;
+  font-weight: 400;
+  background-color: rgba(196, 221, 255, 0.8);
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+}
+footer p {
+  color: rgb(0, 29, 110);
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+/*comienzo css viejo*/
+/* formato h1	
+*/
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.template-areas {
+  grid-template-columns: repeat 1fr;
+  grid-template-rows: auto;
+  gap: 10px 0px;
+  grid-template-areas: "header" "main" "aside" "footer";
+}
+
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+}
+
+#aside {
+  grid-area: aside;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .template-areas {
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main aside" "main main aside" "footer footer footer";
+  }
+  aside {
+    margin: 20px 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .section__fig--div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .animacion_figure:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .animacion_tit {
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease;
+  }
+  @keyframes titulo {
+    0% {
+      color: rgb(0, 29, 110);
+      left: -200px;
+    }
+    25% {
+      color: rgb(100, 100, 215);
+      left: 0px;
+    }
+    50% {
+      color: rgb(127, 181, 255);
+      left: 200px;
+    }
+    75% {
+      color: rgb(127, 240, 255);
+      left: 0px;
+    }
+    100% {
+      color: rgb(0, 29, 110);
+      left: -200px;
+    }
+  }
+  .animacion_logo {
+    transition: width 2s, height 2s, transform 2s;
+  }
+  .animacion_logo:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: rgba(254, 226, 197, 0.2);
+  background-attachment: fixed;
+}
+
+main {
+  width: 100%;
+}
+
+figure {
+  text-align: center;
+}
+
+aside {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside__img--md {
+  width: 70%;
+  height: 70%;
+}
+
+.h1__p--perfiles {
+  color: rgb(0, 29, 110);
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 10px;
+  margin: 50px 0px;
+}
+
+.h__titulo--principal {
+  color: rgb(0, 29, 110);
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.header__img--md {
+  width: 90px;
+  height: 90px;
+  margin-left: 20px;
+}
+
+.header__img--fluido {
+  width: 100%;
+  height: 300px;
+}
+
+.section__p--nosotros {
+  color: rgb(0, 29, 110);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 50px;
+  padding: 10px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.formulario {
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+main ul {
+  list-style: none inside url(pelota.png);
+}
+
+table, th, tr, td {
+  border-collapse: collapse;
+  border: rgb(44, 51, 51) 3px solid;
+}
+
+.main__tabla--margen {
+  padding-left: 20px;
+  width: 75%;
+  height: 80%;
+}
+
+.main__tabla--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__boton {
+  text-align: center;
+  color: rgb(57, 91, 100);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 50px;
+  background-color: rgba(245, 242, 231, 0.65);
+  width: 20%;
+  height: auto;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.iframe__mapa {
+  width: 99%;
+  height: 300px;
+}
+
+.flex--galeria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.galeria__img--md {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.pie__img--sm {
+  width: 40px;
+  height: 40px;
+}
+
+.pie__img--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=styleok.css.map */
