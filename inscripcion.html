@@ -75,52 +75,61 @@
      </header>
     <!-- fin carousel -->
 
-	<div id="main">
+	<div id="main" class="formulario">
 	<main>
 		<section>
 			<h1 class="h__titulo--principal"> Inscripción</h1>
-			<div class="section__p--nosotros">
 			<form action="archivo.php">
-				<div class="formulario">
-				<label for="name">Nombre y Apellido</label>
-				<input type="text" id="name"></div>
-				<div class="formulario">
-				<label for="correo">Email</label>
-				<input type="email" id="correo"></div>
-				<div class="formulario">
-				<label for="telefono">Telefono</label>	
-				<input type="number" id="telefono">
-				<label for="edad">Edad</label>
-					<select name="" id="">
-						<option value="menores">Entre 12 y 14 años</option>
-						<option value="cadetes">Entre 14 y 16 años</option>
-						<option value="juveniles">Entre 16 y 18 años</option>
-					</select></div>
-				<fieldset>
-					<legend class="section__p--nosotros">¿Cómo nos conociste?</legend>
-					<div class="formulario">
-					<label for="amigo">Me contó un amigo</label>
-					<input type="checkbox" id="amigo" value="recomendado por amigo"></div>
-					<div class="formulario">
-					<label for="redes">Lo vi en redes sociales</label>
-					<input type="checkbox" id="redes" value="publicidad en redes"></div>
-					<div class="formulario">
-					<label for="vecino">Vi un  entrenamiento</label>
-					<input type="checkbox" id="vecino" value="presencial"></div>
-				</fieldset>
-				<legend class="formulario section__p--nosotros">¿Jugaste en algún club?</legend>
-				<label for="si">Si</label>
-				<input type="radio" id="si"	value="Juega en club" name="club">
-				<label for="no">No</label>
-				<input type="radio" id="no"	value="no juega en club" name="club">
-				<br>
-				<label for="comentario">Indica club y deja tu comentario</label>
-				<br>
-				<textarea name="" id="" cols="60%" rows="8"></textarea>
-				<br>
-				<input class="form__boton" type="reset" value="Cancelar">
-				<input class="form__boton" type="submit" value="Enviar">
-			</form></div>
+				<div class="row">
+				  <div class="col">
+				    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+				  </div>
+				  <div class="col">
+				    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+				  </div>
+				  <div class="mb-3">
+					  <label for="email" class="form-label"></label>
+					  <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+					</div>
+					<div class="mb-3">
+					  <label for="telefono" class="form-label"></label>
+					  <input type="number" class="form-control" id="telefono" placeholder="Celular">
+					</div>
+				<select class="form-select" aria-label="Edad">
+				  <option selected>Seleccione edad</option>
+				  <option value="1">12 a 14 años</option>
+				  <option value="2">14 a 16 años</option>
+				  <option value="3">16 a 18 años</option>
+				</select>
+				
+					<legend class="">¿Cómo nos conociste?</legend>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    Me contó un amigo
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    Lo vi en redes sociales
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    Vi un entrenamiento
+					  </label>
+					</div>
+					<div class="mb-3">
+					  <label for="exampleFormControlTextarea1" class="form-label">Deja tu comentario</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				<div class="form__boton">	
+				<button type="button" class="btn btn-primary btn-lg">Enviar</button>
+				<button type="button" class="btn btn-secondary btn-lg">Cancelar</button>
+				</div>
+			</form>
 
 		</section>
 	</main></div>
