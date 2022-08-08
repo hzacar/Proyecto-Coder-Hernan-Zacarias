@@ -82,9 +82,6 @@ footer p {
   background-color: rgb(127, 181, 255);
 }
 
-/*comienzo css viejo*/
-/* formato h1	
-*/
 .grid {
   display: grid;
   width: 100%;
@@ -133,35 +130,6 @@ footer p {
     transform: scale(1.2);
     cursor: pointer;
   }
-  .animacion_tit {
-    position: relative;
-    animation-name: titulo;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-    animation-timing-function: ease;
-  }
-  @keyframes titulo {
-    0% {
-      color: rgb(0, 29, 110);
-      left: -200px;
-    }
-    25% {
-      color: rgb(100, 100, 215);
-      left: 0px;
-    }
-    50% {
-      color: rgb(127, 181, 255);
-      left: 200px;
-    }
-    75% {
-      color: rgb(127, 240, 255);
-      left: 0px;
-    }
-    100% {
-      color: rgb(0, 29, 110);
-      left: -200px;
-    }
-  }
   .animacion_logo {
     transition: width 2s, height 2s, transform 2s;
   }
@@ -178,6 +146,9 @@ body {
 
 main {
   width: 100%;
+}
+main ul {
+  list-style: none inside url(pelota.png);
 }
 
 figure {
@@ -237,10 +208,6 @@ aside {
 .formulario {
   margin-top: 10px;
   box-sizing: border-box;
-}
-
-main ul {
-  list-style: none inside url(pelota.png);
 }
 
 table, th, tr, td {
